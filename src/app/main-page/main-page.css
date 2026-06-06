@@ -5,7 +5,7 @@
 /* ── Hero ── */
 .hero {
   text-align: center;
-  padding: 24px 48px 56px;
+  padding: 60px 0px 10px;
   max-width: 860px;
   margin: 0 auto;
 }
@@ -72,15 +72,106 @@
   text-transform: uppercase;
 }
 
+/* ── Section 1: Start Here layout ── */
+.section--start {
+  max-width: 100%;
+}
+
+.start-layout {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.start-main {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 1200px;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.popular-designs {
+  flex: 0 0 210px;
+  padding-left: 20px;
+  border-left: 1px solid var(--border-surface);
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-designs-title {
+  font-size: 0.99rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.popular-designs-list {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.popular-design-item {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  text-decoration: none;
+  background: var(--bg-surface);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--border-surface);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.popular-design-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  border-color: var(--accent);
+}
+
+.popular-design-img {
+  width: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+  align-self: stretch;
+}
+
+.popular-design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 14px;
+}
+
+.popular-design-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.popular-design-sub {
+  font-size: 0.70rem;
+  color: var(--text-on-surface-muted);
+  line-height: 1.4;
+}
+
 /* ── Section 1: Start Here cards ── */
 .card-row {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .card {
-  flex: 1 1 460px;
+  flex: 1 1 0;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -102,7 +193,7 @@
 }
 
 .card-thumb {
-  width: 260px;
+  width: 180px;
   flex-shrink: 0;
   object-fit: cover;
   display: block;
