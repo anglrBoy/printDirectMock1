@@ -1,0 +1,326 @@
+.page {
+  background: #fff;
+}
+
+/* ── Hero ── */
+.hero {
+  text-align: center;
+  padding: 56px 48px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero-tagline {
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-weight: 700;
+  color: #1d1d1f;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 400;
+  color: #6e6e73;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* ── Section shell ── */
+.section {
+  padding: 56px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section--alt {
+  background: #fff;
+  max-width: 100%;
+  padding: 56px 48px;
+}
+
+.section--alt > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.03em;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: #6e6e73;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.section-caption {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6e6e73;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section--alt .section-caption {
+  color: #6e6e73;
+}
+
+/* ── Section 1: Start Here cards ── */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 460px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+  text-decoration: none;
+  background: #2c2c2e;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid var(--card-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  border-color: var(--accent);
+}
+
+.card-thumb {
+  width: 260px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px 24px;
+}
+
+.or-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.or-line {
+  width: 1px;
+  flex: 1;
+  background: #48484a;
+}
+
+.or-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.card-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #98989d;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-cta {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f5f7;
+  letter-spacing: -0.01em;
+}
+
+.card-sub {
+  font-size: 0.88rem;
+  color: #98989d;
+  line-height: 1.5;
+}
+
+.card-subcaption {
+  font-size: 0.78rem;
+  color: #98989d;
+}
+
+.format-chips {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.format-chip {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-tint);
+  border-radius: 4px;
+  padding: 2px 7px;
+  letter-spacing: 0.04em;
+}
+
+.studio-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.studio-stat {
+  font-size: 0.8rem;
+  color: #98989d;
+}
+
+.studio-stat strong {
+  color: #f5f5f7;
+  font-weight: 700;
+}
+
+.studio-divider {
+  width: 1px;
+  height: 14px;
+  background: #48484a;
+}
+
+/* ── Section 2: All Products ── */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  flex: 0 0 calc(25% - 15px);
+  background: #2c2c2e;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 2px solid var(--card-border);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  border-color: var(--accent);
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 16px 20px;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f5f5f7;
+  letter-spacing: -0.01em;
+}
+
+.product-desc {
+  font-size: 0.82rem;
+  color: #98989d;
+  line-height: 1.4;
+}
+
+.product-price {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+/* ── Section 3: Print Workflow ── */
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.workflow-card {
+  background: #2c2c2e;
+  border: none;
+  border-radius: 18px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workflow-step {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.workflow-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f5f5f7;
+  letter-spacing: -0.01em;
+}
+
+.workflow-desc {
+  font-size: 0.88rem;
+  color: #98989d;
+  line-height: 1.6;
+}

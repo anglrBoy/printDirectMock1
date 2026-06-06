@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --accent: #7c3aed;
+  --accent-tint: rgba(124, 58, 237, 0.12);
+  --card-border: #d1d1d6;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
