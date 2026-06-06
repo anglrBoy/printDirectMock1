@@ -79,14 +79,14 @@
 
 .start-layout {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: stretch;
 }
 
 .start-main {
   flex: 1 1 0;
   min-width: 0;
-  max-width: 1200px;
+  max-width: 1350px;
   border-radius: 16px;
   padding: 24px;
 }
