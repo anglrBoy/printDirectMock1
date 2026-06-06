@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
 })
-export class Navbar {}
+export class Navbar {
+  activeTheme = 'purple';
+
+  setTheme(theme: string, event: Event): void {
+    event.preventDefault();
+    this.activeTheme = theme;
+    document.body.setAttribute('data-theme', theme);
+  }
+}

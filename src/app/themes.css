@@ -1,0 +1,110 @@
+/* ── Master theme variables ── */
+/* Apply a theme by setting data-theme on <body>:  */
+/*   purple (default), dark, arctic, slate         */
+
+:root,
+[data-theme="purple"] {
+  --accent:                  #7c3aed;
+  --accent-tint:             rgba(124, 58, 237, 0.12);
+
+  --bg-page:                 #f5f5f7;
+  --bg-navbar:               rgba(245, 245, 247, 0.85);
+  --bg-surface:              #ffffff;
+  --bg-surface-raised:       #ffffff;
+  --bg-surface-hover:        #eaeaec;
+  --bg-section-alt:          #ffffff;
+
+  --border-navbar:           rgba(0, 0, 0, 0.10);
+  --border-dropdown:         rgba(0, 0, 0, 0.10);
+  --border-surface:          #e6e6e6;
+  --shadow-dropdown:         0 8px 32px rgba(0, 0, 0, 0.12);
+
+  --divider-color:           #c7c7cc;
+
+  --text-primary:            #1d1d1f;
+  --text-secondary:          #6e6e73;
+  --text-muted:              #8e8e93;
+  --text-on-surface:         #1d1d1f;
+  --text-on-surface-muted:   #6e6e73;
+  --text-nav:                #1d1d1f;
+}
+
+[data-theme="arctic"] {
+  --accent:                  #0E9B85;
+  --accent-tint:             rgba(14, 155, 133, 0.12);
+  --accent-2:                #1470CC;
+
+  --bg-page:                 #FFFFFF;
+  --bg-navbar:               rgba(255, 255, 255, 0.90);
+  --bg-surface:              #F3FAF9;
+  --bg-surface-raised:       #FFFFFF;
+  --bg-surface-hover:        #D9EEEB;
+  --bg-section-alt:          #F3FAF9;
+
+  --border-navbar:           #D9EEEB;
+  --border-dropdown:         #D9EEEB;
+  --border-surface:          #D9EEEB;
+  --shadow-dropdown:         0 8px 32px rgba(22, 41, 38, 0.10);
+
+  --divider-color:           #D9EEEB;
+
+  --text-primary:            #222222;
+  --text-secondary:          #608E89;
+  --text-muted:              #608E89;
+  --text-on-surface:         #222222;
+  --text-on-surface-muted:   #608E89;
+  --text-nav:                #222222;
+}
+
+[data-theme="slate"] {
+  --accent:                  #1A7CC4;
+  --accent-tint:             rgba(26, 124, 196, 0.12);
+  --accent-2:                #E07B2A;
+
+  --bg-page:                 #FFFFFF;
+  --bg-navbar:               rgba(255, 255, 255, 0.90);
+  --bg-surface:              #F5F7FA;
+  --bg-surface-raised:       #FFFFFF;
+  --bg-surface-hover:        #E8EDF3;
+  --bg-section-alt:          #F5F7FA;
+
+  --border-navbar:           #E8EDF3;
+  --border-dropdown:         #E8EDF3;
+  --border-surface:          #E8EDF3;
+  --shadow-dropdown:         0 8px 32px rgba(30, 45, 61, 0.10);
+
+  --divider-color:           #E8EDF3;
+
+  --text-primary:            #222222;
+  --text-secondary:          #6B7C93;
+  --text-muted:              #6B7C93;
+  --text-on-surface:         #222222;
+  --text-on-surface-muted:   #6B7C93;
+  --text-nav:                #222222;
+}
+
+[data-theme="dark"] {
+  --accent:                  #a78bfa;
+  --accent-tint:             rgba(167, 139, 250, 0.15);
+
+  --bg-page:                 #0f1117;
+  --bg-navbar:               rgba(15, 17, 23, 0.90);
+  --bg-surface:              #1a1d2e;
+  --bg-surface-raised:       #23273a;
+  --bg-surface-hover:        #2c3150;
+  --bg-section-alt:          #0f1117;
+
+  --border-navbar:           rgba(167, 139, 250, 0.12);
+  --border-dropdown:         rgba(167, 139, 250, 0.12);
+  --border-surface:          #2a2e45;
+  --shadow-dropdown:         0 8px 32px rgba(0, 0, 0, 0.55);
+
+  --divider-color:           #2a2e45;
+
+  --text-primary:            #e4e6f0;
+  --text-secondary:          #8b90b4;
+  --text-muted:              #5e6383;
+  --text-on-surface:         #e4e6f0;
+  --text-on-surface-muted:   #6e7399;
+  --text-nav:                #e4e6f0;
+}

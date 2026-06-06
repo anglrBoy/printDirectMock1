@@ -1,10 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
-:root {
-  --accent: #7c3aed;
-  --accent-tint: rgba(124, 58, 237, 0.12);
-  --card-border: #d1d1d6;
-}
+@import './app/themes.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,4 +8,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  transition: background 0.25s ease, color 0.25s ease;
 }
