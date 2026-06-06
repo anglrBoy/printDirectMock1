@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.css'
 })
 export class Navbar {
-  activeTheme = 'purple';
+  activeTheme = 'slate';
+
+  constructor() {
+    document.body.setAttribute('data-theme', this.activeTheme);
+  }
 
   setTheme(theme: string, event: Event): void {
     event.preventDefault();
