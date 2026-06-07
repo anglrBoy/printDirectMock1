@@ -286,6 +286,15 @@
   list-style: none;
 }
 
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  .nav-links,
+  .admin-dropdown,
+  .icon-btn[aria-label="Search"] {
+    display: none;
+  }
+}
+
 /* ── Icon button ── */
 .icon-btn {
   display: flex;

@@ -466,6 +466,10 @@
 
 /* ── Mobile (< 768px) ── */
 @media (max-width: 767px) {
+  .heading-break {
+    display: block;
+  }
+
   .section {
     padding: 32px 20px;
   }
