@@ -232,6 +232,60 @@
   background: var(--accent-tint);
 }
 
+/* ── Dark mode toggle ── */
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 8px;
+}
+
+.toggle-label {
+  font-size: 0.99rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: var(--border-surface);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.toggle-switch.on {
+  background: var(--accent);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.toggle-switch.on .toggle-thumb {
+  transform: translateX(16px);
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: var(--border-dropdown);
+  margin: 4px 0;
+  list-style: none;
+}
+
 /* ── Icon button ── */
 .icon-btn {
   display: flex;

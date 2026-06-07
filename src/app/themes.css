@@ -3,7 +3,7 @@
 /*   purple (default), dark, arctic, slate         */
 
 :root,
-[data-theme="purple"] {
+[data-theme="dark-purple"] {
   --accent:                  #7c3aed;
   --accent-tint:             rgba(124, 58, 237, 0.12);
 
@@ -81,6 +81,60 @@
   --text-on-surface:         #222222;
   --text-on-surface-muted:   #6B7C93;
   --text-nav:                #222222;
+}
+
+[data-theme="dark-arctic"] {
+  --accent:                  #0EC4A8;
+  --accent-tint:             rgba(14, 196, 168, 0.15);
+  --accent-2:                #1470CC;
+
+  --bg-page:                 #060F0D;
+  --bg-navbar:               rgba(6, 15, 13, 0.92);
+  --bg-surface:              #0D1F1C;
+  --bg-surface-raised:       #132B27;
+  --bg-surface-hover:        #1A3832;
+  --bg-section-alt:          #060F0D;
+
+  --border-navbar:           rgba(14, 196, 168, 0.15);
+  --border-dropdown:         rgba(14, 196, 168, 0.15);
+  --border-surface:          #1A3832;
+  --shadow-dropdown:         0 8px 32px rgba(0, 0, 0, 0.55);
+
+  --divider-color:           #1A3832;
+
+  --text-primary:            #D9EEEB;
+  --text-secondary:          #6BBFB5;
+  --text-muted:              #4A8C85;
+  --text-on-surface:         #D9EEEB;
+  --text-on-surface-muted:   #6BBFB5;
+  --text-nav:                #D9EEEB;
+}
+
+[data-theme="dark-slate"] {
+  --accent:                  #4A9FE0;
+  --accent-tint:             rgba(74, 159, 224, 0.15);
+  --accent-2:                #E07B2A;
+
+  --bg-page:                 #0D1117;
+  --bg-navbar:               rgba(13, 17, 23, 0.92);
+  --bg-surface:              #161B22;
+  --bg-surface-raised:       #1F2937;
+  --bg-surface-hover:        #263548;
+  --bg-section-alt:          #0D1117;
+
+  --border-navbar:           rgba(74, 159, 224, 0.15);
+  --border-dropdown:         rgba(74, 159, 224, 0.15);
+  --border-surface:          #263548;
+  --shadow-dropdown:         0 8px 32px rgba(0, 0, 0, 0.55);
+
+  --divider-color:           #263548;
+
+  --text-primary:            #E2E8F0;
+  --text-secondary:          #8BA3C0;
+  --text-muted:              #637A95;
+  --text-on-surface:         #E2E8F0;
+  --text-on-surface-muted:   #8BA3C0;
+  --text-nav:                #E2E8F0;
 }
 
 [data-theme="dark"] {
